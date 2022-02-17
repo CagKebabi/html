@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td><a href="anasayfa.html"><img src="projearaçlar/itopya.png" width="150"> </a></td>
+            <td>
+                <form action="anasayfa.html" method="post">
+                    <input type="text" placeholder="Arama yap...">
+                    <button type="submit">Ara</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table width="100%">
+        <tr>
+            <th><a href="anasayfa.html" target="_self"><b>ANASAYFA</b></a> </th> 
+            <th><a href="hakkimizda.html" target="_self"><b>HAKKIMIZDA</b></a> </th>
+            <th><a href="ürünler.html" target="_self"><b>ÜRÜNLER</b></a> </th>
+            <th><a href="iletisim.html" target="_self">İLETİŞİM</a></th>
+            <th><a href="from.html" target="_self"><button type="button">ÜYE OL</button></a></th>
+        </tr>
+                
+    </table>
+    <hr>
+    <form action="from.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>AD-SOYAD</legend>
+        <label for="isim">İsim:</label><br>
+        <input type="text" name="isim" id="isim" placeholder="isim" required><br>
+        <label for="soyisim">Soyisim:</label><br>
+        <input type="text" name="soyad" id="soyisim" required placeholder="Soyisim"><br>
+        <label for="sifre">Şifre:</label><br>
+        <input type="password" name="sifresi" id="sifre" required><br>
+        Cinsiyet Seçiniz:<br>
+        <label for="erkek">Erkek</label><br>
+        <input type="radio" name="cinsiyet" id="erkek"><br>
+        <label for="kadın">Kadın</label><br>
+        <input type="radio" name="cinsiyet" id="kadın"><br>
+    </fieldset> 
+    <fieldset>
+        <legend>İLETİŞİM</legend>
+        <label for="tel">Tel:</label><br>
+        <input type="tel" name="telefon" id="tel" placeholder="5xx xxx xxxx"><br>
+        <label for="mail">E-mail Adresiniz:</label><br>
+        <input type="email" name="email" id="mail" placeholder="ifno@gmail.com"><br>
+        <label for="Adres">Adres:</label><br>
+        <textarea id="adres" cols="22" rows="7">
+        </textarea>
+    </fieldset>
+    <fieldset>
+        <legend>ÜYELİK SEÇENEKLERİ</legend><br>
+        <label for="tarih">Başlangıç Tarihi:</label><br>
+        <input type="date" name="tarihh" id="tarih"><br>
+        <label for="ay">Başlangıç Ayı</label><br>
+        <input type="month" name="ayy" id="ay"><br>
+        <label for="hafta">Başlangıç Haftası</label><br>
+        <input type="week" name="haftaa" id="hafta"><br>
+        <label for="uyeliktur">Üyelik Paketi</label><br>
+        <input list="uyelikturu" id="uyeliktur">
+        <datalist id="uyelikturu">
+            <option value="üyelik1">
+            <option value="üyelik2">
+            <option value="üyelik3">
+        </datalist><br>
+        <label for="seviye">Ses Seviyesi:</label><br>
+        <input type="range" name="seviyee" id="seviye" min="0" max="100" step="10"><br>
+        <label for="renk">Tema Rengi:</label><br>
+        <input type="color" name="renkk" id="renk"><br>
+        <label for="dosya">Tema Dosyası</label><br>
+        <input type="file" name="dosyaa" id="dosya[]" multiple accept="images/*"><br>
+    </fieldset>
+    <input type="checkbox" name="sozlesmee" id="sozlesme" required>
+    <label for="sozlesme">Üyelik sözleşmesini onaylıyorum</label><br>
+    <input type="checkbox" name="veriizini" id="verionayı">
+    <label for="verionayı">Tarafıma mail ve mesaj atılabilmesini onaylıyorum</label> <br>
+    <button type="submit">Gönder</button><br>
+    </form>
+    <br>
+    <hr>
+    <footer>
+        <table width="130%">
+            <tr>
+                <td><a href="gizlilik.html" target="_blank"><ul><li>Gizlilik</li></ul></a></td>
+                <td><a href="from.html" target="_blank"><ul><li>Üyelik</li></ul></a></td>
+                <td><a href="iletisim.html" target="_blank"><ul><li>İletişim</li></ul></a></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><b>Adres:</b>ıbadem Mahallesi E5 Üzeri Hasanpaşa Sapağı, 34722 Üsküdar/İstanbul</td>
+            <tr>
+                <td><b>Mail:</b><a href="mailto:itopya@gmail.com" target="_blank">itopya@gmail.com</a></td>
+            </tr>   
+            <tr>
+                <td><b>Tel:</b>212 362 4521</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <p style="text-align:center;"> Copyright© 2022 İTOPYA.COM Tüm Hakları Saklıdır </p>
+    </footer>
+</body>
+</html>
